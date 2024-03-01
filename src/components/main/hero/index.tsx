@@ -37,7 +37,7 @@ const Hero = () => {
       <Container sx={{ mt: 4 }}>
         <Box textAlign="center">
           <Typography variant="h4" mb={4}>
-            Search for your next destination
+            hello
           </Typography>
           <StackCpt>
             <SearchCpt label="Search by city" />
