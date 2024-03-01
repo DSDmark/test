@@ -5,8 +5,7 @@ import React from 'react'
 
 // providers
 import ThemeProvider from '@/theme'
-import { Provider } from 'react-redux'
-import store, { persistor } from '@/states'
+import { persistor } from '@/states'
 import { PersistGate } from 'redux-persist/integration/react'
 
 // hooks
@@ -24,14 +23,12 @@ const GlobalLayout = ({ children }: IChildrenProps) => {
   }
 
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <ThemeProvider>
-          {children}
-          <ToastCpt />
-        </ThemeProvider>
-      </PersistGate>
-    </Provider>
+    <PersistGate loading={null} persistor={persistor}>
+      <ThemeProvider>
+        {children}
+        <ToastCpt />
+      </ThemeProvider>
+    </PersistGate>
   )
 }
 

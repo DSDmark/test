@@ -1,7 +1,7 @@
 import { Container, Typography } from '@mui/material'
 import React from 'react'
 
-const About = () => {
+export default function About() {
   return (
     <Container>
       <Typography variant="body1">
@@ -78,5 +78,3 @@ const About = () => {
     </Container>
   )
 }
-
-export default About

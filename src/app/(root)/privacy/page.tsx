@@ -1,6 +1,7 @@
+import React from 'react'
 import { Container, Typography } from '@mui/material'
 
-const Privacy = () => {
+export default function Privacy() {
   return (
     <Container>
       <Typography variant="body1">
@@ -79,5 +80,3 @@ const Privacy = () => {
     </Container>
   )
 }
-
-export default Privacy

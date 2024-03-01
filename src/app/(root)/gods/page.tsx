@@ -1,7 +1,7 @@
 import { Container, Typography } from '@mui/material'
 import React from 'react'
 
-const Gods = () => {
+export default function Gods() {
   return (
     <Container>
       <Typography variant="body1">
@@ -78,5 +78,3 @@ const Gods = () => {
     </Container>
   )
 }
-
-export default Gods

@@ -7,6 +7,7 @@ import { Metadata } from 'next'
 
 // constants
 import { META_DATA } from '@/constants'
+import StoreProvider from './StoreProvider'
 
 export const metadata: Metadata = {
   applicationName: META_DATA.name,
@@ -35,10 +36,12 @@ export default function RootLayout({
   children: ReactNode
 }>) {
   return (
-    <GlobalLayout>
+    <StoreProvider>
       <html lang="en" suppressHydrationWarning>
-        <body>{children}</body>
+        <body>
+          <GlobalLayout>{children}</GlobalLayout>
+        </body>
       </html>
-    </GlobalLayout>
+    </StoreProvider>
   )
 }

@@ -11,7 +11,7 @@
     "format": "prettier --write .",
     "lint": "next lint",
     "type-check": "tsc --noEmit -p ./tsconfig.json",
-    "prepare": "pnpm dlx mrm lint-staged && husky install",
+    "prepare": "pnpm dlx mrm lint-staged",
     "deduplicate": "pnpm dedupe"
   },
   "dependencies": {
