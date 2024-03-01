@@ -1,0 +1,11 @@
+.git
+/.yarn
+/tmp
+.next
+build
+node_modules
+.nyc_output
+pnpm-lock.yaml
+!.eslintrc.js
+!.prettierrc.js
+!.lintstagedrc.js
